@@ -3,10 +3,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>New Web Project</title>
+		<!--Add google viz library-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!--Bootstrap library-->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<!--Google maps library-->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!--Add my script file-->
+		<script type="text/javascript" src="js/script.js"></script>
+		<title>Segregation Across Long Island</title>
 	</head>
 	<body>
-		<h1>New Web Project Page</h1>
+		<h1>Mapping out Inequality</h1>
+		<!--This is the div for all my content-->
+		<div id="contentDiv"> 
+			<!--This is the div for my buttons-->
+			<div id="buttonDiv">
+				<!--These are my three buttons-->
+					
+				<div class="btn btn-success" id ="year_1980">Income Inequality</div>
+				<div class="btn btn-success" id ="year_1990">Housing Inequality</div>	
+				<div class="btn btn-success" id ="year_2000">School Performance</div>
+				
+			</div>
+			<!--This is the div where my map will go-->
+			<div id="mapDiv">
+				
+				
+				
+				
+			</div>	
+					
+			
+		</div>
+		
 	</body>
 </html>
 
