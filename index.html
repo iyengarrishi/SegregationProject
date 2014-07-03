@@ -3,40 +3,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<!--Add google viz library-->
+		
+		<!--Add jquery library-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!--Bootstrap library-->
+		<!--Add google maps API-->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEua_Gkooyn8cEVMyo93fcwccwrxKIYF8"> </script>	
+		<!-- Bootstrap Javascript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!--Custom script file-->
+		<script type="text/javascript" src="script.js"></script>
+		
+		
+		<!--Bootstrap stylesheet-->
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-		<!--Google maps library-->
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<!--Add my script file-->
-		<script type="text/javascript" src="js/script.js"></script>
+		<!--Custom stylesheet-->
+		<link rel="stylesheet" href="style.css">
+		
+		
 		<title>Segregation Across Long Island</title>
+	
 	</head>
 	<body>
 		<h1>Mapping out Inequality</h1>
-		<!--This is the div for all my content-->
-		<div id="contentDiv"> 
-			<!--This is the div for my buttons-->
-			<div id="buttonDiv">
+		
+		<div class="contentDiv"> <!--This is the div for all my content-->
+			
+			
+			<div class="buttonDiv"> <!--This is the div for my buttons-->
+				
 				<!--These are my three buttons-->
 					
-				<div class="btn btn-success" id ="year_1980">Income Inequality</div>
-				<div class="btn btn-success" id ="year_1990">Housing Inequality</div>	
-				<div class="btn btn-success" id ="year_2000">School Performance</div>
+				<div class="btn btn-default" ref="income">Income Inequality</div>
+				<div class="btn btn-default" ref="housing">Housing Inequality</div>	
+				<div class="btn btn-default" ref="performance">School Performance</div>
+			
+			
+			</div> <!--Button div ends here-->
+			
+			
+			<div id="mapDiv"><!--This is the div where my map will go-->
 				
-			</div>
-			<!--This is the div where my map will go-->
-			<div id="mapDiv">
 				
-				
-				
-				
-			</div>	
+			</div> <!--map div ends here-->	
 					
 			
-		</div>
+		</div> <!-- Content div ends here-->
 		
+		
+		
+	
 	</body>
 </html>
 
