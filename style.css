@@ -1,27 +1,67 @@
 
-.contentDiv {
+#contentDiv {
 	width: 960px;
 	height: 600px;
 	position:absolute;
+	margin-left: 80px;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
-.buttonDiv{
-	width: 33.3%;
-	height: 100%;
+#buttonDiv{
+	width: 960px;
+	height: 100px;
 	float: left;
+	position: relative;
+	text-align: center;
+	padding: 30px;
 }
 
 #mapDiv{
-	width: 66.6%;
-	height: 100%;
+	width: 960px;
+	height:	400px;
 	float: left;
 	position: relative;
 }
 
-
-div{
-	outline: 1px solid gray;
+#sliderDiv{
+	width: 960px;
+	height: 100px;
+	float: left;
+	position: relative;
 }
+
+#perfsliderDiv{
+	width: 960px;
+	height: 100px;
+	float: left;
+	position: absolute;
+}
+
+#racesliderDiv{
+	width: 960px;
+	height: 100px;
+	float: left;
+	position: absolute;
+	display: none;
+}
+
+#perfslider-value{
+	text-align: center;
+	size: 50;
+	margin-top: 30px;
+}
+
+#raceslider-value{
+	text-align: center;
+	size: 50;
+	margin-top: 30px;
+}
+
+/*div{
+	outline: 1px solid gray;
+}*/
 
 
 
