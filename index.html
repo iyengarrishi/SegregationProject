@@ -6,6 +6,8 @@
 		
 		<!--Add jquery library-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!--Add jquery UI library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 		<!--Add google maps API-->
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMuEz8VsqCxUq29E_Mrn3PfiZ6ACzcuz4"> </script>	
 		<!-- Bootstrap Javascript -->
@@ -16,6 +18,8 @@
 		
 		<!--Bootstrap stylesheet-->
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<!--jquery UI stylesheet-->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css"/>
 		<!--Custom stylesheet-->
 		<link rel="stylesheet" href="style.css">
 		
@@ -24,31 +28,42 @@
 	
 	</head>
 	<body>
-		<h1>Mapping out Inequality</h1>
+		<h1>Segregation on Long Island</h1>
 		
-		<div class="contentDiv"> <!--This is the div for all my content-->
+		<div id="contentDiv"> <!--This is the div for all my content-->
 			
 			
-			<div class="buttonDiv"> <!--This is the div for my buttons-->
+			<div id="buttonDiv"> <!--This is the div for my buttons-->
 				
 				<!--These are my three buttons-->
 					
-				<div class="btn btn-default income" id="incomeButton" ref="income">Income Inequality</div>
-				<div class="btn btn-default housing" id="housingButton" ref="housing">Housing Inequality</div>	
-				<div class="btn btn-default performance" id="performanceButton" ref="performance">School Performance</div>
+				<div class="btn btn-default perf" id="perfButton" ref="perf" data-map-id="1i8SRdC3GH6IiGRu13FBbHo8hZfTTA0u2ggoYX6Ck">Graduation Rates</div>
+				<div class="btn btn-default race" id="raceButton" ref="race" data-map-id="">% White</div>	
+				<div class="btn btn-default house" id="houseButton" ref="house">Median House Values</div>
 			
 			
 			</div> <!--Button div ends here-->
 			
-			
 			<div id="mapDiv"><!--This is the div where my map will go-->
-		
-
-				
-				
-			</div> <!--map div ends here-->	
-					
 			
+			</div> <!--map div ends here-->	
+			
+			<div id="sliderDiv"><!--This is the div that will hold all my sliders-->
+				
+				<div id="perfsliderDiv"><!--This is the div for my performance slider-->
+					<div id="perfslider-value">
+						
+					</div>
+				</div><!--slider 1 ends here-->
+						
+				<div id="racesliderDiv"><!--This is the div for my race slider-->
+					<div id="raceslider-value">
+						
+					</div>
+				</div><!--slider 2 ends here-->
+			
+			</div><!--Main slider div ends here-->
+		
 		</div> <!-- Content div ends here-->
 		
 		
